@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<!--===============================================================================================================-->
+
+<!-- Developers Gustavo de Souza, Matheus e Vanessa-->
+
+<!--===============================================================================================================-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Transtassi | Estrutura</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="images/tassi.ico"/>
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">    
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/> 
+    <!-- Progress bar  -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-progressbar-3.3.4.css"/> 
+     <!-- Theme color -->
+    <link id="switcher" href="css/theme-color/default-theme.css" rel="stylesheet">
+    <!-- FancyBox -->
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.min.css">
+
+    <!-- Main Style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/styleM.css" rel="stylesheet" type="text/css">
+
+    <!--Link do Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Fonts -->
+
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Lato for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>    
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  
+  <!-- BEGAIN PRELOADER -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  <!-- END PRELOADER -->
+
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Começo do cabeçalho (parte cinza com o email, telefone e botão orçamento) -->
+  <header id="header">
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-contact">
+              <ul>
+                <li>
+                  <div class="phone">
+                    <i class="fa fa-phone"></i>
+                    (35) 2101-1600
+                  </div>
+                </li>
+                <li>
+                  <div class="mail">
+                    <i class="fa fa-envelope"></i>
+                    transtassi@transtassi.com.br
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-login">
+              <!--botão que levará à cotação-->
+              <a class="login modal-form" href="formularioOrcamento.php">COTAÇÃO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Fim do cabeçalho -->
+  
+  <!-- Start login modal window 
+  <div aria-hidden="false" role="dialog" tabindex="-1" id="login-form" class="modal leread-modal fade in">
+    <div class="modal-dialog">
+      <!- Start login section 
+      <div id="login-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-truck"></i>Selecione a carga desejada</h4>
+        </div>
+        <div class="modal-body">
+          <form action="formularioOrcamento.php" method="post">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-3">
+                  <select style="width: 300px" name="produtos">
+                    <option value="quimico">Químico</option>
+                    <option value="grao">Grãos</option>
+                    <option value="minerio">Minério</option>
+                    <option value="madeira">Madeira</option>
+                    <option value="outros">Outros</option>
+                  </select>
+                  <center><br>
+                  <input type="submit" value="Continuar" style="color: #c10b1c">
+                  </center>
+                </div>
+              </div>   
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer footer-box">
+          <p style="color: #32307b">Quer mais informações sobre a empresa?</p>
+          <span>Obtenha mais informações em <a href="#"><font color="#c10b1c">Fale Conosco</font></a></span>            
+        </div>
+      </div>
+    </div>
+  </div>
+ End login modal window -->
+
+  <!-- COMEÇO MENU -->
+  <section id="menu-area">      
+    <nav class="navbar navbar-default" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- BOTÃO PARA VERSÃO MOBILE -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->              
+          <!-- TEXT BASED LOGO -->
+          <a href="index.php"><img src="images/Tassi.png" width="200"></a>               
+          <!-- IMG BASED LOGO  -->
+           <!-- <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a> -->
+        </div>
+        <!-- Itens com a classe dropdown possuem subitens -->
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+            <li><a href="index.php">Início</a></li>
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Empresa <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="empresasGrupo.html">Empresas do Grupo</a></li>
+                <li><a href="historia.html">História</a></li>                
+                <li><a href="quemSomos.html">Quem Somos</a></li>
+                <li><a href="estrutura.html">Estrutura</a></li>                      
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Certificações e Licenças <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="certificacoes.html">Certificações</a></li>                
+                <li><a href="premios.html">Licenças</a></li>        
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Serviços e Equipamentos <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="areasDeAtuacao.html">Áreas de Atuação</a></li>                
+                <li><a href="frota.html">Frota</a></li>
+                <li><a href="tecnologias.html">Tecnologias</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contatos <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">  
+                <li><a href="faleConosco.html">Fale conosco</a></li>              
+                <li><a href="trabalheConosco.html">Trabalhe conosco</a></li>
+              </ul>
+            </li>
+          </ul>                     
+        </div> 
+      </div>    
+    </nav>
+  </section>
+  <!-- FIM MENU --> 
+  
+  <!-- Começo do banner (parte com o título da página e com o mapa do site) -->
+  <section id="single-page-header" style="background-image: url('images/bannerEstrutura.jpg')">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="single-page-header-left">
+              <h2>Estrutura</h2>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="single-page-header-right">
+              <ol class="breadcrumb">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Empresa</a></li>
+                <li class="active">Estrutura</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br><br>
+  <!-- Fim do banner -->
+  
+  <!-- Começo da estrutura -->
+  <div class="mapa">
+    <div class="container">
+      <div class="row">
+
+        <!-- INFORMAÇÕES MATRIZ POÇOS DE CALDAS-->
+        <div class="col-md-12">
+          <h3><font color="black">Matriz : Poços de Caldas - MG</font></h3><br>
+          <!-- Lista com as informações -->
+          <ul class="col-md-12">
+            <li style="list-style-type: disc">6000 m<sup>2</sup></li>
+            <li style="list-style-type: disc">Principal parte administrativa</li>
+            <li style="list-style-type: disc">Instalação possui estrutura de manutenção própria</li>
+            <li style="list-style-type: disc">Instalação possui estrutura para pintura de caminhões</li>
+            <li style="list-style-type: disc">Instalação possui lavador próprio</li>
+          </ul>
+
+          <!-- Galeria de Imagens da frota feito com Fancybox -->
+          <div class="gallery">
+            <!-- Uma imagem do fancybox -->
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                    <!-- Imagem no quadrado -->
+                    <img src="images/matriz01.jpg" class="img-responsive" alt="gallery-image">
+                    <!-- Imagem quando é clicada -->
+                    <a data-fancybox="matriz" href="images/matriz01.jpg"></a>
+                    <p>PÁTIO</p>
+                </div>
+            </div>
+            <!-- Uma imagem do fancybox -->
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                  <!-- Imagem no quadrado -->
+                    <img src="images/matriz02.jpg" class="img-responsive" alt="gallery-image">
+                    <!-- Imagem quando é clicada -->
+                    <a data-fancybox="matriz" href="images/matriz02.jpg"></a>
+                    <p>ESTRUTURA DE MANUTENÇÃO</p>
+                </div>
+            </div>
+            <!-- Uma imagem do fancybox -->
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                  <!-- Imagem no quadrado -->
+                    <img src="images/imagem.jpg" class="img-responsive" alt="gallery-image">
+                    <!-- Imagem quando é clicada -->
+                    <a data-fancybox="matriz" href="images/imagem.jpg"></a>
+                    <p>ENTRADA</p>
+                </div>
+            </div>
+          </div>
+
+        </div> 
+
+        <!-- Passa um traço para dividir a página -->
+        <div class="col-md-12">
+          <hr>
+        </div>
+
+        <!-- INFORMAÇÕES FILIAL GUARULHOS-->
+        <div class="col-md-12">
+          <h3><font color="black">Filial : Guarulhos - SP</font></h3><br>
+          <!-- Lista com as informações -->
+          <ul class="col-md-12" style="text-align: justify">
+            <li style="list-style-type: disc">15000 m<sup>2</sup></li>
+            <li style="list-style-type: disc">Possui um ETE (Estação de Tratamento de Efluentes) que é certificado pela SASSMAQ. Permite que toda a limpeza dos caminhões e a vaporização dos tanques de aço inox aconteçam de forma responsável, reduzindo o consumo de água e evitando qualquer tipo de contato de produtos químicos com o meio ambiente, utilizando o efluente retirado e tratado como água para lavar pátios, em vasos sanitários, entre outros serviços de limpeza.</li>
+            <li style="list-style-type: disc">Pavimento administrativo</li>
+            <li style="list-style-type: disc">Possui alojamento, refeitório e almoxarifado</li>
+            <li style="list-style-type: disc">Instalação possui estrutura de manutenção própria</li>
+            <li style="list-style-type: disc">Instalação possui estrutura para pintura de caminhões</li>
+            <li style="list-style-type: disc">Instalação possui estrutura para descontaminação de tanque</li>
+            <li style="list-style-type: disc">Há um posto de combustível para abastecimento próprio</li>
+            <li style="list-style-type: disc">Possui coleta de água da chuva</li>
+          </ul>
+
+          <!-- Galeria de Imagens da frota feito com Fancybox -->
+          <div class="gallery">
+            <!-- Uma imagem do fancybox -->
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                    <!-- Imagem no quadrado -->
+                    <img src="images/guarulhos01.jpeg" class="img-responsive" alt="gallery-image">
+                    <!-- Imagem quando é clicada -->
+                    <a data-fancybox="Guarulhos" href="images/guarulhos01.jpeg"></a>
+                    <p>ESTRUTURA DE MANUTENÇÃO</p>
+                </div>
+            </div>
+            <!-- Uma imagem do fancybox -->
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                  <!-- Imagem no quadrado -->
+                    <img src="images/guarulhos02.jpeg" class="img-responsive" alt="gallery-image">
+                    <!-- Imagem quando é clicada -->
+                    <a data-fancybox="Guarulhos" href="images/guarulhos02.jpeg"></a>
+                    <p>MANUTENÇÃO E PINTURA</p>
+                </div>
+            </div>
+            <!-- Uma imagem do fancybox -->
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                  <!-- Imagem no quadrado -->
+                    <img src="images/guarulhos03.jpg" class="img-responsive" alt="gallery-image">
+                    <!-- Imagem quando é clicada -->
+                    <a data-fancybox="Guarulhos" href="images/guarulhos03.jpg"></a>
+                    <p>POSTO DE ABASTECIMENTO</p>
+                </div>
+            </div>
+            <!-- Uma imagem do fancybox -->
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                    <!-- Imagem no quadrado -->
+                    <img src="images/guarulhos04.jpeg" class="img-responsive" alt="gallery-image">
+                    <!-- Imagem quando é clicada -->
+                    <a data-fancybox="Guarulhos" href="images/guarulhos04.jpeg"></a>
+                    <p>ETE - ESTAÇÃO DE TRATAMENTO DE EFLUENTES</p>
+                </div>
+            </div>
+            <!-- Uma imagem do fancybox -->
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                  <!-- Imagem no quadrado -->
+                    <img src="images/guarulhos05.jpeg" class="img-responsive" alt="gallery-image">
+                    <!-- Imagem quando é clicada -->
+                    <a data-fancybox="Guarulhos" href="images/guarulhos05.jpeg"></a>
+                    <p>FILTRO DE GASES</p>
+                </div>
+            </div>
+            <!-- Uma imagem do fancybox -->
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                  <!-- Imagem no quadrado -->
+                    <img src="images/guarulhos06.jpeg" class="img-responsive" alt="gallery-image">
+                    <!-- Imagem quando é clicada -->
+                    <a data-fancybox="Guarulhos" href="images/guarulhos06.jpeg"></a>
+                    <p>ADMINISTRATIVO - Parte inferior ALOJAMENTOS - Parte superior</p>
+
+                </div>
+            </div>
+            <!-- Uma imagem do fancybox -->
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                  <!-- Imagem no quadrado -->
+                    <img src="images/guarulhos07.jpeg" class="img-responsive" alt="gallery-image">
+                    <!-- Imagem quando é clicada -->
+                    <a data-fancybox="Guarulhos" href="images/guarulhos07.jpeg"></a>
+                    <p>ADMINISTRATIVO - Parte inferior ALOJAMENTOS - Parte superior</p>
+                </div>
+            </div>
+          </div>
+
+        </div> 
+
+        <!-- Passa um traço para dividir a página -->
+        <div class="col-md-12">
+          <hr>
+        </div>
+
+        <!-- INFORMAÇÕES FILIAL BAHIA-->
+        <div class="col-md-12">
+          <h3><font color="black">Filial : Candeias - BA</font></h3><br>
+          <!-- Lista com as informações -->
+          <ul class="col-md-12">
+            <li style="list-style-type: disc">Esta filial está em processo de mudança de local</li>
+          </ul>
+
+          <!-- Galeria de Imagens da frota feito com Fancybox -->
+          <div class="gallery">
+            <!-- Uma imagem do fancybox -->
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                    <!-- Imagem no quadrado -->
+                    <img src="images/candeias01.jpg" class="img-responsive" alt="gallery-image">
+                    <!-- Imagem quando é clicada -->
+                    <a data-fancybox="candeias" href="images/candeias01.jpg"></a>
+                    <p>PÁTIO</p>
+                </div>
+            </div>
+            <!-- Uma imagem do fancybox -->
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                  <!-- Imagem no quadrado -->
+                    <img src="images/candeias02.jpg" class="img-responsive" alt="gallery-image">
+                    <!-- Imagem quando é clicada -->
+                    <a data-fancybox="candeias" href="images/candeias02.jpg"></a>
+                    <p>PÁTIO</p>
+                </div>
+            </div>
+            <!-- Uma imagem do fancybox -->
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                  <!-- Imagem no quadrado -->
+                    <img src="images/candeias03.jpg" class="img-responsive" alt="gallery-image">
+                    <!-- Imagem quando é clicada -->
+                    <a data-fancybox="candeias" href="images/candeias03.jpg"></a>
+                    <p>ADMINSITRAÇÃO</p>
+                </div>
+            </div>
+          </div>
+
+        </div> 
+      </div>    
+    </div>
+  </div>  
+  <!-- Fim da estrutura -->
+
+<!--parte da página que estará um botão para a pessoa fazer uma cotação-->  
+  <section id="subscribe">
+    <div class="subscribe-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="subscribe-area">
+              <h2 class>Faça sua cotação agora mesmo!</h2><br>
+              
+                <center>
+                <a href="formularioOrcamento.php"><button type="button" class="btn btn-danger" style="width: 180px;height: 80px"><h3>Cotação</h3></button></a>
+                </center>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fim da cotação -->
+  
+<!-- Começo do rodapé -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+
+        <!-- Informações da matriz -->
+        <div class="col-md-3 col-sm-3">
+          <div class="footer-left">
+            <p>MATRIZ</p>
+            <p> <i class="fa fa-map-marker-alt"></i> Av. João Pinheiro, 2055<br>Centro, Poços de Caldas - MG<br>CEP: 37701-387</p>
+            <p> <i class="fa fa-phone"></i> (35)2101-1600</p>
+          </div>
+        </div>
+
+        <!-- Informações da filial de Guarulhos -->
+        <div class="col-md-3 col-sm-3">
+          <div class="footer-left">           
+            <p>FILIAL GUARULHOS</p>
+            <p> <i class="fa fa-map-marker-alt"></i> Av. José Brumati, 2070<br>Jardim Santo Expedido, Guarulhos - SP<br>CEP: 07160-170</p>
+            <p> <i class="fa fa-phone"></i> (11)4968-5400</p>
+          </div>
+        </div>
+
+        <!-- Informações da filial de Candeias -->
+        <div class="col-md-3 col-sm-3">
+          <div class="footer-left">
+            <p>FILIAL CANDEIAS</p>
+            <p> <i class="fa fa-map-marker-alt"></i> Rodovia BA 522, S/N - KM 01<br>Bairro Caroba, Candeias, BA<br>CEP: 43813-300</p>
+            <p> <i class="fa fa-phone"></i> (71)99416-0081</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3">
+          <div class="footer-right">
+
+            <!-- Link do facebook -->
+            <a href="https://www.facebook.com/transtassi" target="_blank"><i class="fab fa-facebook"></i></a>
+
+            <!-- Link do linkedin -->
+            <a href="https://www.linkedin.com/company/transtassi-ltda?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A1945052%2Cidx%3A1-1-1%2CtarId%3A1445630894507%2Ctas%3Atranstassi" target="_blank"><i class="fab fa-linkedin"></i></a>
+            
+            <!-- Email -->
+            <p> <i class="fa fa-envelope"></i> transtassi@transtassi.com.br </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Fim do rodapé -->
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="js/slick.js"></script>    
+  <!-- mixit slider -->
+  <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+  <!-- FancyBox -->
+  <script src="fancybox/jquery.fancybox.min.js"></script>
+  <!-- counter -->
+  <script src="js/waypoints.js"></script>
+  <script src="js/jquery.counterup.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="js/wow.js"></script> 
+  <!-- progress bar   -->
+  <script type="text/javascript" src="js/bootstrap-progressbar.js"></script>  
+  
+ 
+  <!-- Custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+   (function(){
+     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+     s1.async=true;
+     s1.src='https://embed.tawk.to/571e840c1f16e76c25338653/default';
+     s1.charset='UTF-8';
+     s1.setAttribute('crossorigin','*');
+     s0.parentNode.insertBefore(s1,s0);
+   })();
+</script>
+<!--End of Tawk.to Script-->
+  
+  </body>
+</html>

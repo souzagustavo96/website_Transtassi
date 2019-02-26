@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--importações do css e de outros recursos usados através da web-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Transtassi | Clientes</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="images/tassi.ico"/>
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">    
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/> 
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/> 
+    <!-- Progress bar  -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-progressbar-3.3.4.css"/> 
+     <!-- Theme color -->
+    <link id="switcher" href="css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/styleM.css" rel="stylesheet" type="text/css">
+
+    <!--Link do Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Fonts -->
+
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Lato for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>    
+    
+  </head>
+  <body>
+  
+  <!-- loader da pagina -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  
+
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+  
+
+  <!-- Start header -->
+  <header id="header">
+    
+    <!-- cabeçalho (parte com telefone e email em cima do menu) -->
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-contact">
+              <ul>
+                <li>
+                  <div class="phone">
+                    <i class="fa fa-phone"></i>
+                    (35) 2101-1600
+                  </div>
+                </li>
+                <li>
+                  <div class="mail">
+                    <i class="fa fa-envelope"></i>
+                    transtassi@transtassi.com.br
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-login">
+              <!--botão que levará à cotação-->
+              <a class="login modal-form" href="formularioOrcamento.php">COTAÇÃO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- End header -->
+  
+  <!-- Start login modal window 
+  <div aria-hidden="false" role="dialog" tabindex="-1" id="login-form" class="modal leread-modal fade in">
+    <div class="modal-dialog">
+      <!-Start login section 
+      <div id="login-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-truck"></i>Selecione a carga desejada</h4>
+        </div>
+        <div class="modal-body">
+          <form action="formularioOrcamento.php" method="post">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-3">
+                  <select style="width: 300px" name="produtos">
+                    <option value="quimico">Químico</option>
+                    <option value="grao">Grãos</option>
+                    <option value="minerio">Minério</option>
+                    <option value="madeira">Madeira</option>
+                    <option value="outros">Outros</option>
+                  </select>
+                  <center><br>
+                  <input type="submit" value="Continuar" style="color: #c10b1c">
+                  </center>
+                </div>
+              </div>   
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer footer-box">
+          <p style="color: #32307b">Quer mais informações sobre a empresa?</p>
+          <span>Obtenha mais informações em <a href="#"><font color="#c10b1c">Fale Conosco</font></a></span>            
+        </div>
+      </div>
+    </div>
+  </div>
+ End login modal window -->
+
+  <!-- Início do menu -->
+  <section id="menu-area">      
+    <nav class="navbar navbar-default" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- menu para a versão mobile -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Logo ao lado das opções do menu -->              
+          <a href="index.php"><img src="images/Tassi.png" width="200"></a>              
+ 
+        </div>
+        <!--início do menu na versão web (PC normal)-->
+        <div id="navbar" class="navbar-collapse collapse">
+          <!--opções do menu-->
+          <!--IMPORTANTE = as uls que possuem a class "dropdown-menu" possuem subitens-->
+          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+            <li><a href="index.php">Início</a></li>
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Empresa <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="empresasGrupo.html">Empresas do Grupo</a></li>
+                <li><a href="historia.html">História</a></li>                
+                <li><a href="quemSomos.html">Quem Somos</a></li>
+                <li><a href="estrutura.html">Estrutura</a></li> 
+                <li><a href="parceriasEClientes.html">Clientes</a></li>           
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Certificações e Licenças <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="certificacoes.html">Certificações</a></li>                
+                <li><a href="licencas.html">Licenças</a></li>            
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Serviços e Equipamentos <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="areasDeAtuacao.html">Áreas de Atuação</a></li>                
+                <li><a href="frota.html">Frota</a></li>
+                <li><a href="tecnologias.html">Tecnologias</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contatos <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="faleConosco.html">Fale conosco</a></li>              
+                <li><a href="trabalheConosco.html">Trabalhe conosco</a></li>
+              </ul>
+            </li>
+          </ul>                     
+        </div>
+        
+      </div>     
+    </nav>
+  </section>
+  <!--fim do menu--> 
+  
+  <!--banner com as informações da página -->
+  <section id="single-page-header" style="margin-bottom: 2rem;background-image: url('images/bannerClientes.jpg')">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <!--nome da página que você está-->
+            <div class="single-page-header-left">
+              <h2>Clientes</h2>
+              
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="single-page-header-right">
+              <ol class="breadcrumb">
+                <!--mapa de onde você está-->
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Empresa</a></li>
+                <li class="active">Clientes</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br><br>
+  <!-- fim do banner -->
+  
+  <div class="mapa">
+    <div class='container' style="margin-bottom: 2rem">
+      <div class = 'row'>
+          <!--essa class faz com que o espaço no canto esquerdo esteja dísponivel para nossa escrita-->
+          <!--a definição "col-md-4" pegará 4 partes da tela, pois com o uso de bootstrap a tela pode ser dividida em 12 -->
+
+        <!-- Imagem -->
+        <div class="col-md-4">
+          <img src="images/Basf.png" width="290px" height="150px">
+        </div>
+
+        <!-- Texto sobre -->
+        <div class="col-md-8">
+          <p align="justify">BASF SE é uma empresa química alemã global e líder mundial na área química, fundada no dia 6 de abril de 1865 em Mannheim pelo ourives e empresário Friedrich Engelhorn para produzir corantes sintéticos para tecidos. </p>
+          <p align="justify">Em 2014, ao completar 150 anos, a BASF adotou um novo posicionamento global amparado pelo slogan “We Create Chemistry” (Nós transformamos a química). Em seus laboratórios centralizados na Alemanha uma grande rede de cientistas em parcerias com universidades testam novas combinações de fungicidas, pesticidas e herbicidas para que as safras se desenvolvam bem em situações limites. Para isso, estudam os impactos ambientais em diversos níveis, tentando caminhar para uma tecnologia cada vez mais sustentável.</p>
+        </div>
+
+      </div>
+  </div>
+
+<hr>
+
+<!--__________________________________________________________________-->
+
+<div class='container'>
+      <div class = 'row'>
+          <!--essa class faz com que o espaço no canto esquerdo esteja dísponivel para nossa escrita-->
+          <!--a definição "col-md-4" pegará 4 partes da tela, pois com o uso de bootstrap a tela pode ser dividida em 12 partes-->
+
+        <!-- Imagem -->
+        <div class="col-md-4">
+          <img src="images/bemisa.png" width="280px" height="93px">
+        </div>
+
+        <!-- Texto sobre -->
+        <div class="col-md-8">
+          <p align="justify">O Grupo Bemisa foi fundado em 2007 e, atualmente, conta com dez projetos de diferentes commodities minerais distribuídos por sete estados brasileiros. conta com equipe multidisciplinar com ampla experiência e sucesso comprovado na exploração, desenvolvimento e operação de ativos minerais.</p>
+          <p align="justify">São uma empresa competitiva no setor mineral, agregando valor aos acionistas e desenvolvendo projetos com excelência e de forma sustentável.</p>
+        </div>
+
+      </div>
+  </div>
+
+  <hr>
+
+<!--__________________________________________________________________-->
+
+<div class='container'>
+      <div class = 'row'>
+          <!--essa class faz com que o espaço no canto esquerdo esteja dísponivel para nossa escrita-->
+          <!--a definição "col-md-4" pegará 4 partes da tela, pois com o uso de bootstrap a tela pode ser dividida em 12 partes-->
+
+        <!-- Imagem -->
+        <div class="col-md-4"><br>
+          <img src="images/brenntag.png" width="280px">
+        </div>
+
+        <!-- Texto sobre -->
+        <div class="col-md-8">
+          <p align="justify">A empresa multinacional Brenntag, sediada na Alemanha, gere cadeias de fornecimento complexas, tanto para fabricantes de produtos químicos como para consumidores, simplificando o acesso ao mercado de milhares de produtos e serviços. Usufrui em pleno da sua filosofia: “ConnectingChemistry”.</p>
+          <p align="justify">Na Brenntag, a segurança vem sempre em primeiro lugar. Com o esforço para zero acidentes e incidentes em todo o mundo, tencionamos definir padrões da indústria para medidas de segurança.</p>
+        </div>
+
+      </div>
+  </div>
+
+  <hr>
+
+<!--_____________________________________________________________________________________-->
+
+  <div class='container'>
+      <div class = 'row'>
+          <!--essa class faz com que o espaço no canto esquerdo esteja dísponivel para nossa escrita-->
+          <!--a definição "col-md-4" pegará 4 partes da tela, pois com o uso de bootstrap a tela pode ser dividida em 12 partes-->
+
+        <!-- Imagem -->
+        <div class="col-md-4">
+          <img src="images/cba.png" width="280px">
+        </div>
+
+        <!-- Texto sobre -->
+        <div class="col-md-8">
+          <p align="justify">A CBA roduz alumínio do começo ao fim: extrai a bauxita, transforma o metal e ofere desde lingotes até produtos transformados como chapas e bobinas.</p>
+          <p align="justify">Ela opera uma refinaria de alumina em Alumínio (SP) e um smelter para Usinagem e Caldeiraria em Sorocaba (SP). Obtém sua bauxita, matéria prima para a fabricação do alumínio de três áreas de mineração em Minas Gerais, em Poços de Caldas, Itamarati de Minas e em Miraí. Atua em Fundição e Reciclagem com a Metalex em Araçariguama (SP).</p>
+        </div>
+
+      </div>
+  </div>
+
+  <hr>
+
+<!--__________________________________________________________________-->
+
+<div class='container'>
+      <div class = 'row'>
+          <!--essa class faz com que o espaço no canto esquerdo esteja dísponivel para nossa escrita-->
+          <!--a definição "col-md-4" pegará 4 partes da tela, pois com o uso de bootstrap a tela pode ser dividida em 12 partes-->
+
+        <!-- Imagem -->
+        <div class="col-md-4">
+          <img src="images/cdgn.jpg" width="280px">
+        </div>
+
+        <!-- Texto sobre -->
+        <div class="col-md-8">
+          <p align="justify">Constituída em 2002 na cidade do Rio de Janeiro, a empresa CDGN atua como operador logístico na distribuição de derivados de petróleo e seus correlatos e na comercialização de gás natural comprimido (GNC), provendo soluções integradas por meio de profissionais especializados.</p>
+          <p align="justify">Posteriormente, a empresa expandiu suas atividades para o transporte de produtos asfálticos e óleo combustível.</p>
+        </div>
+
+      </div>
+  </div>
+
+  <hr>
+
+<!--_____________________________________________________________________________________-->
+
+  <div class='container'>
+      <div class = 'row'>
+          <!--essa class faz com que o espaço no canto esquerdo esteja dísponivel para nossa escrita-->
+          <!--a definição "col-md-4" pegará 4 partes da tela, pois com o uso de bootstrap a tela pode ser dividida em 12 partes-->
+
+        <!-- Imagem -->
+        <div class="col-md-4">
+          <img src="images/chevron.png" width="280px" height="280px">
+        </div>
+
+        <!-- Texto sobre -->
+        <div class="col-md-8"><br>
+          <p align="justify">A Chevron, por meio de suas afiliadas, está presente no Brasil desde 1915, com a comercialização de produtos derivados de petróleo da marca Texaco®. Hoje, o negócio da Chevron Brasil inclui exploração e produção de óleo e gás natural.</p>
+
+          <p align="justify">A Chevron também possui uma fábrica de aditivos Oronite®, que produz diversos tipos de aditivos para combustíveis e lubrificantes. A Oronite é líder no desenvolvimento, produção e comercialização de aditivos para combustíveis e óleos lubrificantes.</p>
+        </div>
+
+      </div>
+  </div>
+
+  <hr>
+
+<!--_______________________________________________________________________________________________-->
+
+    <div class='container'>
+      <div class = 'row'>
+          <!--essa class faz com que o espaço no canto esquerdo esteja dísponivel para nossa escrita-->
+          <!--a definição "col-md-4" pegará 4 partes da tela, pois com o uso de bootstrap a tela pode ser dividida em 12 partes-->
+
+        <!-- Imagem -->
+        <div class="col-md-4">
+          <img src="images/Covestro.png" width="280px">
+        </div>
+
+        <!-- Texto sobre -->
+        <div class="col-md-8"><br>
+          <p align="justify">A Covestro é líder mundial na produção de polímeros. Os produtos são usados em diversas áreas da vida moderna. Os principais setores servidos são: automotivo, construção, elétrico e eletrônico, madeira e mobiliário e esporte e lazer.</p>
+
+          <p align="justify">Trabalhamos em soluções para os desafios do nosso tempo: Ajudamos a tornar os veículos mais leves para economizar combustível. Nossos sistemas de isolamento protegem os edifícios do calor e do frio para reduzir o consumo de energia. No entretenimento digital, os nossos produtos oferecem funcionalidade, segurança e design perfeito.</p>
+        </div>
+
+      </div>
+  </div>
+
+  <hr>
+
+  <!--_______________________________________________________________________________________________-->
+
+    <div class='container'>
+      <div class = 'row'>
+          <!--essa class faz com que o espaço no canto esquerdo esteja dísponivel para nossa escrita-->
+          <!--a definição "col-md-4" pegará 4 partes da tela, pois com o uso de bootstrap a tela pode ser dividida em 12 partes-->
+
+        <!-- Imagem -->
+        <div class="col-md-4">
+          <img src="images/csn.png" width="280px">
+        </div>
+
+        <!-- Texto sobre -->
+        <div class="col-md-8">
+          <p align="justify">Um dos mais eficientes complexos siderúrgicos integrados do mundo, a CSN atua com destaque em cinco setores: siderurgia, mineração, logística, cimento e energia. Atualmente, entre seus ativos, a empresa conta com uma usina siderúrgica integrada; cinco unidades industriais, sendo duas delas no exterior; minas de minério de ferro, calcário, dolomita e estanho; uma forte distribuidora de aços planos; terminais portuários; participações em ferrovias; e participação em duas usinas hidrelétricas.</p>
+        </div>
+
+      </div>
+  </div>
+
+  <hr>
+
+  <!--__________________________________________________________________-->
+
+<div class='container'>
+      <div class = 'row'>
+          <!--essa class faz com que o espaço no canto esquerdo esteja dísponivel para nossa escrita-->
+          <!--a definição "col-md-4" pegará 4 partes da tela, pois com o uso de bootstrap a tela pode ser dividida em 12 partes-->
+
+        <!-- Imagem -->
+        <div class="col-md-4">
+          <img src="images/erbAratinga.jpg" width="280px" height="160px">
+        </div>
+
+        <!-- Texto sobre -->
+        <div class="col-md-8">
+          <p align="justify">Fundada em 2008, a ERB – Energias Renováveis do Brasil – é referência na geração de energia de biomassa, oferecendo a seus clientes soluções dedicadas, utilizando tecnologias sustentáveis e inovadoras</p>
+
+          <p align="justify">A partir de uma análise das necessidades de cada cliente, a companhia projeta, investe, constrói e opera plantas de cogeração de energia (vapor e eletricidade), garantindo, através da produção própria de biomassa, segurança de suprimento, redução nos custos de energia e nas emissões de carbono.</p>
+        </div>
+
+      </div>
+  </div>
+
+  <hr>
+
+
+  <!--__________________________________________________________________-->
+
+<div class='container'>
+      <div class = 'row'>
+          <!--essa class faz com que o espaço no canto esquerdo esteja dísponivel para nossa escrita-->
+          <!--a definição "col-md-4" pegará 4 partes da tela, pois com o uso de bootstrap a tela pode ser dividida em 12 partes-->
+
+        <!-- Imagem -->
+        <div class="col-md-4">
+          <img src="images/lubrizol.jpg" width="280px">
+        </div>
+
+        <!-- Texto sobre -->
+        <div class="col-md-8">
+          <p align="justify">A Lubrizol Corporation é uma fornecedora de especialidades químicas para os mercados de transporte, industrial e de consumo. Esses produtos incluem aditivos para óleos de motor e outros fluidos relacionados ao transporte, aditivos para lubrificantes industriais e aditivos para gasolina e diesel.</p>
+
+          <p align="justify">Além disso, a Lubrizol faz ingredientes e aditivos para produtos de cuidados pessoais, produtos farmacêuticos e equipamentos médicos, materiais especiais, incluindo tecnologia de plásticos e revestimentos sob a forma de especialidades resinas e aditivos.</p>
+        </div>
+
+      </div>
+  </div>
+
+  <hr>
+
+  <!--__________________________________________________________________-->
+
+<div class='container'>
+      <div class = 'row'>
+          <!--essa class faz com que o espaço no canto esquerdo esteja dísponivel para nossa escrita-->
+          <!--a definição "col-md-4" pegará 4 partes da tela, pois com o uso de bootstrap a tela pode ser dividida em 12 partes-->
+
+        <!-- Imagem -->
+        <div class="col-md-4">
+          <img src="images/oxiteno.jpg" width="280px">
+        </div>
+
+        <!-- Texto sobre -->
+        <div class="col-md-8">
+          <p align="justify">A Oxiteno é uma empresa química global, que faz parte do grupo Ultra, líder na produção de tensoativos e especialidades químicas na América Latina. O seu trabalho é pautado pelo cuidado com pessoas e meio ambiente, além da busca constante por soluções inovadoras que tornem a vidas as pessoas mais fácil.</p>
+
+          <p align="justify">Oferecem soluções especializadas para os mercados de Agroquímicos, Cuidados Pessoais, Limpeza Doméstica e Institucional, Petróleo e Gás e Tintas e Revestimentos.</p>
+        </div>
+
+      </div>
+  </div>
+
+  <hr>
+
+  <!--_______________________________________________________________________________________________-->
+
+    <div class='container'>
+      <div class = 'row'>
+          <!--essa class faz com que o espaço no canto esquerdo esteja dísponivel para nossa escrita-->
+          <!--a definição "col-md-4" pegará 4 partes da tela, pois com o uso de bootstrap a tela pode ser dividida em 12 partes-->
+
+        <!-- Imagem -->
+        <div class="col-md-4">
+          <img src="images/Petrobras.png" width="280px">
+        </div>
+
+        <!-- Texto sobre -->
+        <div class="col-md-8">
+          <p align="justify">A Petrobras é uma sociedade anônima de capital aberto que atua de forma integrada e especializada na indústria de óleo, gás natural e energia.</p>
+
+          <p align="justify">Estão presentes nos segmentos de exploração e produção, refino, comercialização, transporte, petroquímica, distribuição de derivados, gás natural, energia elétrica, gás-química e biocombustíveis. O seu lema atual é "Uma empresa integrada de energia que atua com responsabilidade social e ambiental".</p>
+        </div>
+
+      </div>
+  </div>
+
+  <hr>
+
+  <!--_______________________________________________________________________________________________-->
+
+    <div class='container'>
+      <div class = 'row'>
+          <!--essa class faz com que o espaço no canto esquerdo esteja dísponivel para nossa escrita-->
+          <!--a definição "col-md-4" pegará 4 partes da tela, pois com o uso de bootstrap a tela pode ser dividida em 12 partes-->
+
+        <!-- Imagem -->
+        <div class="col-md-4">
+          <img src="images/petronas.png" width="280px">
+        </div>
+
+        <!-- Texto sobre -->
+        <div class="col-md-8"><br>
+          <p align="justify">Petronas, abreviação de Petroliam Nasional Berhad, é a empresa estatal da Malásia de petróleo e gás que foi fundada em 17 de agosto de 1974. Ela possui todas as reservas de petróleo e gás natural da Malásia.</p>
+
+          <p align="justify">A empresa construiu como sede as Petronas Towers, dois dos maiores arranha-céus do mundo. A empressa está presente em mais de 31 países e atua em vários ramos da industria do petróleo desde a produção e a exploração até o refino passando pela distribuição.</p>
+        </div>
+
+      </div>
+  </div>
+
+  <hr>
+
+  <!--_______________________________________________________________________________________________-->
+
+    <div class='container'>
+      <div class = 'row'>
+          <!--essa class faz com que o espaço no canto esquerdo esteja dísponivel para nossa escrita-->
+          <!--a definição "col-md-4" pegará 4 partes da tela, pois com o uso de bootstrap a tela pode ser dividida em 12 partes-->
+
+        <!-- Imagem -->
+        <div class="col-md-4">
+          <img src="images/quantiQ.jpg" width="280px">
+        </div>
+
+        <!-- Texto sobre -->
+        <div class="col-md-8">
+          <p align="justify">A quantiQ é referência em distribuição de produtos químicos no Brasil e pertence a GTM Holdings S.A. Com atuação em diversos segmentos do mercado, a quantiQ possui um amplo portfólio de produtos e atua em mais de 20 segmentos de mercado, dentre eles, os segmentos de Lubrificantes, Borracha, Farma, Adesivos, Tintas, Agroindústria, Food, Construção Civil, Cosméticos, Aromas & Fragrâncias e Oil & Gas.</p>
+
+          <p align="justify">Atua em todo o país por meio de uma ampla estrutura comercial e logística, que conta com centros de distribuição e escritórios nas regiões Sul, Sudeste e Nordeste.</p>
+        </div>
+      </div>
+  </div>
+
+  <hr>
+
+  <!--_______________________________________________________________________________________________-->
+
+    <div class='container'>
+      <div class = 'row'>
+          <!--essa class faz com que o espaço no canto esquerdo esteja dísponivel para nossa escrita-->
+          <!--a definição "col-md-4" pegará 4 partes da tela, pois com o uso de bootstrap a tela pode ser dividida em 12 partes-->
+
+        <!-- Imagem -->
+        <div class="col-md-4">
+          <img src="images/stepan.png" width="280px">
+        </div>
+
+        <!-- Texto sobre -->
+        <div class="col-md-8">
+          <p align="justify">Com sede em Northfield, Illinois, a Stepan fabrica produtos químicos básicos e intermediários, produtos especializados, quaternários germicidas e para amaciante de roupas, anidrido ftálico (P.A., phtalic anhydride) polióis de poliuretano e ingredientes especiais para os mercados de alimentos, de suplementos e farmacêutico.</p>
+
+          <p align="justify">É fabricante mundial de tensioactivos aniónicos comerciais, que são utilizados para reforçar as capacidades de espuma e limpeza de detergentes, champôs, dentífricos e cosméticos.</p>
+        </div>
+
+      </div>
+  </div>
+
+  <hr>
+
+  <!--_______________________________________________________________________________________________-->
+
+    <div class='container'>
+      <div class = 'row'>
+          <!--essa class faz com que o espaço no canto esquerdo esteja dísponivel para nossa escrita-->
+          <!--a definição "col-md-4" pegará 4 partes da tela, pois com o uso de bootstrap a tela pode ser dividida em 12 partes-->
+
+        <!-- Imagem -->
+        <div class="col-md-4">
+          <img src="images/unilever.png" width="280px" height="300px">
+        </div>
+
+        <!-- Texto sobre -->
+        <div class="col-md-8"><br>
+          <p align="justify">Unilever é uma multinacional britânica-neerlandesa de bens de consumo cossediada em Roterdã, nos Países Baixos, e em Londres, no Reino Unido. Seus produtos incluem alimentos, bebidas, produtos de limpeza e produtos de higiene pessoal. A Unilever é a maior produtora de alimentos untáveis do mundo, como a margarina. Uma das empresas multinacionais mais antigas, seus produtos estão disponíveis em cerca de 190 países.</p>
+
+          <p align="justify">Está organizada em quatro divisões principais: Alimentos, Refrescos (bebidas e gelados), Cuidados Domésticos e Cuidados Pessoais. Possui instalações de investigação e desenvolvimento no Reino Unido, nos Países Baixos, na China, na Índia e nos Estados Unidos.</p>
+        </div>
+
+      </div>
+  </div>
+
+  <hr>
+
+<!--__________________________________________________________________-->
+
+  <div class='container'>
+      <div class = 'row'>
+          <!--essa class faz com que o espaço no canto esquerdo esteja dísponivel para nossa escrita-->
+          <!--a definição "col-md-4" pegará 4 partes da tela, pois com o uso de bootstrap a tela pode ser dividida em 12 partes-->
+
+        <!-- Imagem -->
+        <div class="col-md-4">
+          <img src="images/usiminas.png" width="280px">
+        </div>
+
+        <!-- Texto sobre -->
+        <div class="col-md-8">
+          <p align="justify">Usiminas (Usinas Siderurgicas de Minas Gerais S.A) é uma empresa do setor siderúrgico líder na produção e comercialização de aços planos laminados a frio e a quente, bobinas, placas e revestidos, destinados principalmente aos setores de bens de capital e de bens de consumo da linha branca, além da indústria automotiva.</p>
+
+          <p align="justify">A empresa investe na modernização de suas unidades e em produtos de conteúdo tecnológico diferenciado, sempre em sintonia com tendências mundiais de pesquisa e aplicação.</p>
+        </div>
+
+      </div>
+  </div>
+
+  <hr>
+
+  <!--__________________________________________________________________-->
+
+<div class='container'>
+      <div class = 'row'>
+          <!--essa class faz com que o espaço no canto esquerdo esteja dísponivel para nossa escrita-->
+          <!--a definição "col-md-4" pegará 4 partes da tela, pois com o uso de bootstrap a tela pode ser dividida em 12 partes-->
+
+        <!-- Imagem -->
+        <div class="col-md-4">
+          <img src="images/vallourec.jpg" width="280px">
+        </div>
+
+        <!-- Texto sobre -->
+        <div class="col-md-8">
+          <p align="justify">O Grupo Vallourec é um conglomerado francês que atua no setor da siderurgia e está presente em mais de 20 países.</p>
+
+          <p align="justify">É líder mundial na fabricação de tubos de aço sem costura e em soluções tubulares Premiu​m, a Vallourec atende aos setores de energia, petrolífero, industrial, construção civil e automotivo. Os tubos de aço sem costura da Vallourec Soluções Tubulares do Brasil abastecem o mercado nacional e internacional</p>
+        </div>
+
+      </div>
+  </div>
+
+  <hr>
+
+  <!--__________________________________________________________________-->
+
+<div class='container'>
+      <div class = 'row'>
+          <!--essa class faz com que o espaço no canto esquerdo esteja dísponivel para nossa escrita-->
+          <!--a definição "col-md-4" pegará 4 partes da tela, pois com o uso de bootstrap a tela pode ser dividida em 12 partes-->
+
+        <!-- Imagem -->
+        <div class="col-md-4">
+          <img src="images/vopak.png" width="280px">
+        </div>
+
+        <!-- Texto sobre -->
+        <div class="col-md-8">
+          <p align="justify">A Vopak é uma empresa holandesa que armazena e lida com vários produtos relacionados a petróleo, produtos químicos, óleos comestíveis e gás natural. A empresa foi criada pela fusão da Van Ommeren e da Pakhoed em 1999.</p>
+
+          <p align="justify">A Vopak possui uma rede global de terminais. Os serviços de terminal que a Vopak oferece podem ser agrupados em 4 mercados: terminais de importação / exportação / distribuição, terminais-hub nos aeroportos, terminais industriais e terminais de gás. A Vopak está ativa na Europa, Oriente Médio, África e Ásia, América do Norte e América do Sul (somente produtos químicos).</p>
+        </div>
+
+      </div>
+  </div>
+
+</div>
+<!-- Fim dos cientes -->    
+
+  <!--parte da página que estará um botão para a pessoa fazer uma cotação-->
+  <section id="subscribe">
+    <div class="subscribe-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="subscribe-area">
+              <h2 class>Faça sua cotação agora mesmo!</h2><br>
+              
+                <center>
+                <a href="formularioOrcamento.php"><button type="button" class="btn btn-danger" style="width: 180px;height: 80px"><h3>Cotação</h3></button></a>
+                </center>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>    
+    
+ <!-- Começo do rodapé -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3 col-sm-3">
+          <div class="footer-left">
+            <p>MATRIZ</p>
+            <p> <i class="fa fa-map-marker-alt"></i> Av. João Pinheiro, 2055<br>Centro, Poços de Caldas - MG<br>CEP: 37701-387</p>
+            <p> <i class="fa fa-phone"></i> (35)2101-1600</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3">
+          <div class="footer-left">           
+            <p>FILIAL GUARULHOS</p>
+            <p> <i class="fa fa-map-marker-alt"></i> Av. José Brumati, 2070<br>Jardim Santo Expedido, Guarulhos - SP<br>CEP: 07160-170</p>
+            <p> <i class="fa fa-phone"></i> (11)4968-5400</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3">
+          <div class="footer-left">
+            <p>FILIAL CANDEIAS</p>
+            <p> <i class="fa fa-map-marker-alt"></i> Rodovia BA 522, S/N - KM 01<br>Bairro Caroba, Candeias, BA<br>CEP: 43813-300</p>
+            <p> <i class="fa fa-phone"></i> (71)99416-0081</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3">
+          <div class="footer-right">
+            <a href="https://www.facebook.com/transtassi" target="_blank"><i class="fab fa-facebook"></i></a>
+
+            <a href="https://www.linkedin.com/company/transtassi-ltda?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A1945052%2Cidx%3A1-1-1%2CtarId%3A1445630894507%2Ctas%3Atranstassi" target="_blank"><i class="fab fa-linkedin"></i></a>
+            
+            <p> <i class="fa fa-envelope"></i> transtassi@transtassi.com.br </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Fim do rodapé -->
+  
+
+  <!--importações do javascript-->
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="js/slick.js"></script>    
+  <!-- mixit slider -->
+  <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+ <!-- counter -->
+  <script src="js/waypoints.js"></script>
+  <script src="js/jquery.counterup.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="js/wow.js"></script> 
+  <!-- progress bar   -->
+  <script type="text/javascript" src="js/bootstrap-progressbar.js"></script>  
+  
+ 
+  <!-- Custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+
+  <!--Start of Tawk.to Script
+<script type="text/javascript">
+   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+   (function(){
+     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+     s1.async=true;
+     s1.src='https://embed.tawk.to/571e840c1f16e76c25338653/default';
+     s1.charset='UTF-8';
+     s1.setAttribute('crossorigin','*');
+     s0.parentNode.insertBefore(s1,s0);
+   })();
+</script>
+End of Tawk.to Script-->
+  
+  </body>
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<!--===============================================================================================================-->
+
+<!-- Developers Gustavo de Souza, Matheus e Vanessa-->
+
+<!--===============================================================================================================-->
+<html lang="en">
+  <head>
+    <!--importações do css e de outros recursos usados através da web-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Transtassi | Áreas de Atuação</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="images/tassi.ico"/>
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">    
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/> 
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/> 
+    <!-- Progress bar  -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-progressbar-3.3.4.css"/> 
+     <!-- Theme color -->
+    <link id="switcher" href="css/theme-color/default-theme.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/styleM.css" rel="stylesheet" type="text/css">
+
+    <!--Link do Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Fonts -->
+
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Lato for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>    
+    
+  </head>
+  <body>
+  
+  <!-- loader da pagina -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  
+
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+  
+
+  <!-- Start header -->
+  <header id="header">
+    
+    <!-- cabeçalho (parte com telefone e email em cima do menu) -->
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-contact">
+              <ul>
+                <li>
+                  <div class="phone">
+                    <i class="fa fa-phone"></i>
+                    (35) 2101-1600
+                  </div>
+                </li>
+                <li>
+                  <div class="mail">
+                    <i class="fa fa-envelope"></i>
+                    transtassi@transtassi.com.br
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-login">
+              <!--botão que levará à cotação-->
+              <a class="login modal-form" href="formularioOrcamento.php">COTAÇÃO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- End header -->
+  
+  <!-- Start login modal window 
+  <div aria-hidden="false" role="dialog" tabindex="-1" id="login-form" class="modal leread-modal fade in">
+    <div class="modal-dialog">
+      <!- Start login section 
+      <div id="login-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-truck"></i>Selecione a carga desejada</h4>
+        </div>
+        <div class="modal-body">
+          <form action="formularioOrcamento.php" method="post">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-3">
+                  <select style="width: 300px" name="produtos">
+                    <option value="quimico">Químico</option>
+                    <option value="grao">Grãos</option>
+                    <option value="minerio">Minério</option>
+                    <option value="madeira">Madeira</option>
+                    <option value="outros">Outros</option>
+                  </select>
+                  <center><br>
+                  <input type="submit" value="Continuar" style="color: #c10b1c">
+                  </center>
+                </div>
+              </div>   
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer footer-box">
+          <p style="color: #32307b">Quer mais informações sobre a empresa?</p>
+          <span>Obtenha mais informações em <a href="#"><font color="#c10b1c">Fale Conosco</font></a></span>            
+        </div>
+      </div>
+    </div>
+  </div>
+ End login modal window -->
+
+  <!-- Início do menu -->
+  <section id="menu-area">      
+    <nav class="navbar navbar-default" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- menu para a versão mobile -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Logo ao lado das opções do menu -->              
+          <a href="index.php"><img src="images/Tassi.png" width="200"></a>              
+ 
+        </div>
+        <!--início do menu na versão web (PC normal)-->
+        <div id="navbar" class="navbar-collapse collapse">
+          <!--opções do menu-->
+          <!--IMPORTANTE = as uls que possuem a class "dropdown-menu" possuem subitens-->
+          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+            <li><a href="index.php">Início</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Empresa <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="empresasGrupo.html">Empresas do Grupo</a></li>
+                <li><a href="historia.html">História</a></li>                
+                <li><a href="quemSomos.html">Quem Somos</a></li>
+                <li><a href="estrutura.html">Estrutura</a></li>                       
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Certificações e Licenças <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="certificacoes.html">Certificações</a></li>                
+                <li><a href="licencas.html">Licenças</a></li>                           
+              </ul>
+            </li>
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Serviços e Equipamentos <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu active" role="menu">
+                <li><a href="areasDeAtuacao.html">Áreas de Atuação</a></li>                
+                <li><a href="frota.html">Frota</a></li>
+                <li><a href="tecnologias.html">Tecnologias</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contatos <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">  
+                <li><a href="faleConosco.html">Fale conosco</a></li>              
+                <li><a href="trabalheConosco.html">Trabalhe conosco</a></li>
+              </ul>
+            </li>
+          </ul>                     
+        </div> 
+      </div>    
+    </nav>
+  </section>
+  <!--fim do menu--> 
+  
+  <!--banner com as informações da página -->
+  <section id="single-page-header" style="margin-bottom: 2rem;background-image: url('images/bannerAreasDeAtuacao.jpeg')">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <!--nome da página que você está-->
+            <div class="single-page-header-left">
+              <h2>Áreas de Atuação</h2>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="single-page-header-right">
+              <ol class="breadcrumb">
+                <!--mapa de onde você está-->
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Serviços e Equipamentos</a></li>
+                <li class="active">Áreas de Atuação</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- fim do banner -->
+  
+  <h6>.</h6>
+  <div class="container" style="padding-top: 10px">
+    <div class="row">
+      <!-- PARTE SOBRE OS QUÍMICOS -->
+      <div>
+        <div class="col-md-7">
+          <!-- Texto sobre os químicos -->
+          <h2><font color="black">Químicos</font></h2>
+          <p align="justify"><font size="4">Produtos químicos são fundamentais para o desenvolvimento econômico do país. Eles afetam a vida de todos os seres humanos, direta ou indiretamente. São essenciais à saúde, alimentação e ao bem- estar.</font></p>
+          <p align="justify"><font size="4">O Grupo Tassi atua desde 1987 neste setor, e o foco na qualidade faz com que a Empresa se destaque cada vez mais no cenário nacional, figurando entre as melhores empresas de transporte do país.</font></p>
+          <p align="justify"><font size="4">Todos os equipamentos são de aço inox, trazendo, assim, maior segurança ao transporte dos produtos. Essa é uma das vantagens que o grupo Tassi oferece, além da segurança, flexibilidade de tanques (litragem: 5000 a 50000 litros), vasta experiência e todas as licenças para o Brasil e Mercosul.</font></p>
+        </div>
+        <!-- Imagem químicos -->
+        <div class="col-md-5">
+          <br><br>
+          <div class="blog-news-img">
+            <img src="images/transporteQuimico.jpg" alt="image">
+          </div>
+        </div>
+      </div>
+
+      <!-- Faz o traço na página -->
+      <div class="col-md-12">
+        <hr>
+      </div>
+
+      <!-- PARTE SOBRE A MINERAÇÃO -->
+      <div>
+        <!-- Imagem mineiração -->
+        <div class="col-md-5">
+          <div class="blog-news-img">
+            <img src="images/transporteMineracao.jpg" alt="image">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <!-- Texto sobre mineração -->
+          <h2><font color="black">Mineração</font></h2>
+          <p align="justify"><font size="4">No segmento Mineração o Grupo Tassi apresenta um modelo de gestão eficiente e moderno. Com uma frota nova, dispõe para seus clientes um serviço personalizado, atendendo às demandas em todo território nacional.</font></p>
+          <p align="justify"><font size="4">A Empresa possui gestão operacional sob cada caminhão, e implementou as normas de segurança desta modalidade em seu principal cliente, quebrando paradigmas.</font></p>
+        </div> 
+      </div>
+
+      <!-- Faz o traço na página -->
+      <div class="col-md-12">
+        <hr>
+      </div>
+
+      <!-- PARTE SOBRE O MERCOSUL -->
+      <div>
+        <div class="col-md-7">
+          <!-- Texto sobre o Mercosul -->
+          <h2><font color="black">Transporte para o Mercosul</font></h2>
+          <p align="justify"><font size="4">As empresas que vendem para outros países sabem que, além de qualidade, é preciso agilidade e competência para entregar seus produtos, com máxima segurança, dentro dos prazos estabelecidos pelos clientes.</font></p>
+          <p align="justify"><font size="4">O Grupo Tassi já opera no Mercosul, com experiência comprovada em todas as etapas da operação. Possui veículos licenciados, além de um despachante aduaneiro dedicado para agilizar as operações na fronteira.</font></p>
+        </div>
+        <!-- Imagem mercosul -->
+        <div class="col-md-5">
+          <div class="blog-news-img">
+            <img src="images/mercosul.jpg" alt="image">
+          </div>
+        </div>
+      </div>
+
+      <!-- Faz o traço na página -->
+      <div class="col-md-12">
+        <hr>
+      </div>
+
+      <!-- PARTE SOBRE A TASSI LOCADORA -->
+      <div>
+        <!-- Imagem Tassi Locadora -->
+        <div class="col-md-5">
+          <div class="blog-news-img">
+            <img src="images/locacaoDeVeiculos.jpg" alt="image">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <!-- Texto sobre a Tassi Locadora -->
+          <h2><font color="black">Locação de Veículos</font></h2>
+          <p align="justify"><font size="4">O Grupo Tassi oferece a locação de uma frota pesada nova e moderna, podenedo ter cavalos, trucks e tanques e uma frota de veículos leves, todos de acordo com a legislação vigente, baseando-se em altos padrões de qualidade.</font></p>
+          <p align="justify"><font size="4">Sistemas de gestão informatizados possibilitam acompanhamento contínuo dos serviços prestados, atendendo a usuários de qualquer localidade.</font></p>
+          <p align="justify"><font size="4">Investindo sempre na renovação, a Empresa garante a segurança de seus clientes, colaboradores e da sociedade.</font></p>
+        </div>
+      </div>
+
+      <!-- Faz o traço na página -->
+      <div class="col-md-12">
+        <hr>
+      </div>
+
+      <!-- PARTE SOBRE CONTAINERS -->
+      <div>
+        <div class="col-md-7">
+          <!-- Texto sobre containers -->
+          <h2><font color="black">Containers</font></h2>
+          <p align="justify"><font size="4">Visando o crescimento a ser atingido, o Grupo Tassi adquire mais um novo modal em seu mix: o Transporte de Containers.</font></p>
+          <p align="justify"><font size="4">Esse transporte é realizado através de Bugs, sendo efetivado com toda segurança e total responsabilidade, levando seu produto a qualquer lugar do Brasil.</font></p>
+          <p align="justify"><font size="4">Com a missão de transportar cargas com eficiência e segurança, o Grupo Tassi proporciona a seus clientes um serviço diferenciado e completo.</font></p>
+        </div>
+        <!-- Imagem containers -->
+        <div class="col-md-5">
+          <div class="blog-news-img">
+            <img src="images/transporteContainer.png" alt="image">
+          </div>
+        </div>
+      </div>
+
+      <!-- Faz o traço na página -->
+      <div class="col-md-12">
+        <hr>
+      </div>
+
+      <!-- PARTE SOBRE A MADEIRA -->
+      <div>
+        <!-- Imagem Madeira -->
+        <div class="col-md-5">
+          <div class="blog-news-img">
+            <img src="images/transporteMadeira.jpeg" alt="image">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <!-- Texto sobre a Madeira -->
+          <h2><font color="black">Madeira</font></h2>
+          <p align="justify"><font size="4">O Grupo Tassi possui em sua gama de serviços toda a cadeia logística para o transporte de madeira contemplando ações na área florestal e entrega no cliente final, com a garantia de utilização do veículo adequado à operação.</font></p>
+          <p align="justify"><font size="4">Neste tipo de transporte dispomos de conjuntos envolvendo cavalos mecânicos 6x4 e carretas (fueiros) com 2 eixos, passando por equipamentos para poda e ajuste da carga, bem como todo o aparato tecnológico de monitoramento e rastreamento.</font></p>
+        </div>
+      </div>
+
+      <!-- Faz o traço na página -->
+      <div class="col-md-12">
+        <hr>
+      </div>
+
+      <!-- PARTE SOBRE GRÃOS -->
+      <div>
+        <div class="col-md-7">
+          <!-- Texto sobre grãos -->
+          <h2><font color="black">Agronegócio</font></h2>
+          <p align="justify"><font size="4">Acreditamos no desenvolvimento do Agronegócio no país, por isso atuamos nesse segmento com Graneleiros (7 e 9 eixos) e temos pontos de apoio em seis cidades do Brasil.</font></p>
+        </div>
+        <!-- Imagem grãos -->
+        <div class="col-md-5">
+          <div class="blog-news-img">
+            <img src="images/agronegocio.png" alt="image">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--parte da página que estará um botão para a pessoa fazer uma cotação-->  
+  <section id="subscribe" style="margin-top: 2rem">
+    <div class="subscribe-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="subscribe-area">
+              <h2 class>Faça sua cotação agora mesmo!</h2><br>
+              
+                <center>
+                <a href="formularioOrcamento.php"><button type="button" class="btn btn-danger" style="width: 180px;height: 80px"><h3>Cotação</h3></button></a>
+                </center>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+  <!-- Fim cotação -->   
+    
+ <!-- Começo do rodapé -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+
+        <!-- Informações da matriz -->
+        <div class="col-md-3 col-sm-3">
+          <div class="footer-left">
+            <p>MATRIZ</p>
+            <p> <i class="fa fa-map-marker-alt"></i> Av. João Pinheiro, 2055<br>Centro, Poços de Caldas - MG<br>CEP: 37701-387</p>
+            <p> <i class="fa fa-phone"></i> (35)2101-1600</p>
+          </div>
+        </div>
+
+        <!-- Informações da filial de Guarulhos -->
+        <div class="col-md-3 col-sm-3">
+          <div class="footer-left">           
+            <p>FILIAL GUARULHOS</p>
+            <p> <i class="fa fa-map-marker-alt"></i> Av. José Brumati, 2070<br>Jardim Santo Expedido, Guarulhos - SP<br>CEP: 07160-170</p>
+            <p> <i class="fa fa-phone"></i> (11)4968-5400</p>
+          </div>
+        </div>
+
+        <!-- Informações da filial de Candeias -->
+        <div class="col-md-3 col-sm-3">
+          <div class="footer-left">
+            <p>FILIAL CANDEIAS</p>
+            <p> <i class="fa fa-map-marker-alt"></i> Rodovia BA 522, S/N - KM 01<br>Bairro Caroba, Candeias, BA<br>CEP: 43813-300</p>
+            <p> <i class="fa fa-phone"></i> (71)99416-0081</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3">
+          <div class="footer-right">
+
+            <!-- Link do facebook -->
+            <a href="https://www.facebook.com/transtassi" target="_blank"><i class="fab fa-facebook"></i></a>
+
+            <!-- Link do linkedin -->
+            <a href="https://www.linkedin.com/company/transtassi-ltda?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A1945052%2Cidx%3A1-1-1%2CtarId%3A1445630894507%2Ctas%3Atranstassi" target="_blank"><i class="fab fa-linkedin"></i></a>
+            
+            <!-- Email -->
+            <p> <i class="fa fa-envelope"></i> transtassi@transtassi.com.br </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Fim do rodapé -->
+  
+
+  <!--importações do javascript-->
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="js/slick.js"></script>    
+  <!-- mixit slider -->
+  <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+ <!-- counter -->
+  <script src="js/waypoints.js"></script>
+  <script src="js/jquery.counterup.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="js/wow.js"></script> 
+  <!-- progress bar   -->
+  <script type="text/javascript" src="js/bootstrap-progressbar.js"></script>  
+  
+ 
+  <!-- Custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+   (function(){
+     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+     s1.async=true;
+     s1.src='https://embed.tawk.to/571e840c1f16e76c25338653/default';
+     s1.charset='UTF-8';
+     s1.setAttribute('crossorigin','*');
+     s0.parentNode.insertBefore(s1,s0);
+   })();
+</script>
+<!--End of Tawk.to Script-->
+  
+  </body>
+</html>
